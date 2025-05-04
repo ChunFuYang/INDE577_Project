@@ -1,14 +1,37 @@
 # The Perceptron
 
-This folder contains a Jupyter notebook implementing the Perceptron algorithm from scratch.
+The Perceptron is a foundational algorithm in machine learning for binary classification. It is a type of linear classifier that attempts to find a hyperplane that separates data points of two classes.
 
-## Description
-The Perceptron is a simple linear binary classifier. The notebook demonstrates its use on the Breast Cancer Wisconsin dataset.
+## Algorithm Overview
+Given input features $x = (x_1, x_2, ..., x_n)$, the Perceptron computes a weighted sum:
 
-## Dataset
-- Breast Cancer Wisconsin (from sklearn.datasets)
+$$
+z = w_0 + w_1 x_1 + w_2 x_2 + ... + w_n x_n
+$$
 
-## How to Reproduce
-1. Open The_Perceptron.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-learn.
+The output is determined by the sign of $z$:
+- If $z \geq 0$, predict class 1
+- If $z < 0$, predict class 0
+
+## Learning Rule
+The Perceptron updates its weights whenever it misclassifies a sample:
+
+$$
+w_j := w_j + \eta (y^{(i)} - \hat{y}^{(i)}) x_j
+$$
+
+- $w_j$: Weight for feature $j$
+- $\eta$: Learning rate
+- $y^{(i)}$: True label
+- $\hat{y}^{(i)}$: Predicted label
+- $x_j$: Feature value
+
+## Limitations
+- Only works for linearly separable data
+- Cannot solve problems that are not linearly separable (e.g., XOR problem)
+
+## Applications
+- Early neural networks
+- Pattern recognition
+
+The Perceptron is the building block for more complex neural networks.

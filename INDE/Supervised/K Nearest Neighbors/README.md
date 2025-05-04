@@ -1,14 +1,28 @@
 # K Nearest Neighbors (KNN)
 
-This folder contains a Jupyter notebook implementing KNN classification using scikit-learn.
+K Nearest Neighbors (KNN) is a simple, non-parametric algorithm used for classification and regression. It makes predictions based on the $k$ closest data points in the feature space.
 
-## Description
-KNN is a simple, instance-based learning algorithm for classification. The notebook demonstrates its use on the Wine dataset.
+## Algorithm Steps
+1. Choose the number of neighbors $k$.
+2. Compute the distance (e.g., Euclidean) between the query point and all training samples.
+3. Select the $k$ nearest neighbors.
+4. For classification: assign the most common class among the neighbors.
+5. For regression: average the values of the neighbors.
 
-## Dataset
-- Wine (from sklearn.datasets)
+## Distance Metric
+For two points $x$ and $y$ in $n$-dimensional space:
 
-## How to Reproduce
-1. Open K_Nearest_Neighbors.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-learn.
+$$
+\text{Euclidean distance} = \sqrt{\sum_{i=1}^n (x_i - y_i)^2}
+$$
+
+## Properties
+- **Lazy learning:** No explicit training phase.
+- **Sensitive to feature scaling and irrelevant features.**
+
+## Applications
+- Pattern recognition
+- Recommendation systems
+- Anomaly detection
+
+KNN is easy to implement but can be computationally expensive for large datasets.

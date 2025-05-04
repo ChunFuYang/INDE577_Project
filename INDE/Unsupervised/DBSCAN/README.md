@@ -1,14 +1,24 @@
 # DBSCAN
 
-This folder contains a Jupyter notebook implementing DBSCAN clustering using scikit-learn.
+DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is an unsupervised clustering algorithm that groups together points that are closely packed and marks points that lie alone in low-density regions as outliers.
 
-## Description
-DBSCAN is a density-based clustering algorithm. The notebook demonstrates its use on the Iris dataset.
+## Algorithm Steps
+1. For each point, count the number of points within a radius $\varepsilon$ (epsilon).
+2. If the number is at least `min_samples`, the point is a core point and forms a cluster with its neighbors.
+3. Expand clusters by recursively including density-reachable points.
+4. Points not reachable from any core point are labeled as noise (outliers).
 
-## Dataset
-- Iris (from sklearn.datasets)
+## Key Parameters
+- $\varepsilon$ (epsilon): Neighborhood radius
+- `min_samples`: Minimum points to form a dense region
 
-## How to Reproduce
-1. Open DBSCAN.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-learn.
+## Advantages
+- Finds arbitrarily shaped clusters
+- Robust to outliers
+- No need to specify the number of clusters
+
+## Limitations
+- Sensitive to parameter selection
+- Struggles with varying density
+
+DBSCAN is widely used for spatial data and anomaly detection.

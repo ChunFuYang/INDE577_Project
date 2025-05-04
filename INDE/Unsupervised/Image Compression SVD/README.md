@@ -1,14 +1,32 @@
 # Image Compression with SVD
 
-This folder contains a Jupyter notebook implementing image compression using Singular Value Decomposition (SVD).
+Singular Value Decomposition (SVD) is a matrix factorization technique used in image compression to reduce the amount of data required to represent an image while preserving important features.
 
-## Description
-SVD is used for image compression by reducing the rank of the image matrix. The notebook demonstrates its use on the astronaut image from scikit-image.
+## Mathematical Formulation
+Given an image represented as a matrix $A$ (e.g., grayscale pixel values):
 
-## Dataset
-- Astronaut image (from skimage.data)
+$$
+A = U \Sigma V^T
+$$
 
-## How to Reproduce
-1. Open Image_Compression_SVD.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-image.
+- $U$: Left singular vectors
+- $\Sigma$: Diagonal matrix of singular values
+- $V^T$: Right singular vectors
+
+To compress, keep only the top $k$ singular values and corresponding vectors:
+
+$$
+A_k = U_k \Sigma_k V_k^T
+$$
+
+## Steps in Image Compression
+1. Compute the SVD of the image matrix.
+2. Retain only the largest $k$ singular values.
+3. Reconstruct the image using the reduced matrices.
+
+## Applications
+- Image compression
+- Noise reduction
+- Latent semantic analysis
+
+SVD allows for efficient storage and transmission of images with minimal loss of quality.

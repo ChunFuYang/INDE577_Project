@@ -1,14 +1,23 @@
 # Random Forests
 
-This folder contains a Jupyter notebook implementing Random Forests using scikit-learn.
+Random Forests are ensemble learning algorithms that combine multiple decision trees to improve predictive performance and reduce overfitting. They are used for both classification and regression tasks.
 
-## Description
-Random Forests are ensemble models for classification and regression. The notebook demonstrates its use on the Wine dataset.
+## Algorithm Overview
+1. **Bootstrap Sampling:** Randomly sample the training data with replacement to create multiple subsets.
+2. **Tree Construction:** For each subset, build a decision tree using a random subset of features at each split.
+3. **Aggregation:** For classification, use majority voting; for regression, use the average prediction.
 
-## Dataset
-- Wine (from sklearn.datasets)
+## Key Concepts
+- **Bagging:** Reduces variance by averaging multiple models trained on different data samples.
+- **Feature Randomness:** At each split, a random subset of features is considered, increasing diversity among trees.
 
-## How to Reproduce
-1. Open Random_Forests.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-learn.
+## Advantages
+- High accuracy
+- Robust to overfitting
+- Handles large datasets and high-dimensional spaces
+
+## Limitations
+- Less interpretable than single decision trees
+- Can be computationally intensive
+
+Random Forests are widely used for their strong performance and versatility.

@@ -1,14 +1,22 @@
 # Principal Component Analysis (PCA)
 
-This folder contains a Jupyter notebook implementing PCA using scikit-learn.
+Principal Component Analysis (PCA) is an unsupervised dimensionality reduction technique that transforms data into a new coordinate system, maximizing variance along the axes (principal components).
 
-## Description
-PCA is a dimensionality reduction technique. The notebook demonstrates its use on the Wine dataset.
+## Algorithm Steps
+1. Standardize the data.
+2. Compute the covariance matrix.
+3. Calculate eigenvalues and eigenvectors of the covariance matrix.
+4. Sort eigenvectors by decreasing eigenvalues and select the top $k$ components.
+5. Project the data onto the selected components.
 
-## Dataset
-- Wine (from sklearn.datasets)
+## Mathematical Formulation
+Given a data matrix $X$ (centered):
+- Covariance matrix: $C = \frac{1}{n-1} X^T X$
+- Eigen decomposition: $C v = \lambda v$
 
-## How to Reproduce
-1. Open Principal_Component_Analysis.ipynb.
-2. Run all cells in order.
-3. Required packages: numpy, matplotlib, scikit-learn.
+## Applications
+- Data visualization
+- Noise reduction
+- Feature extraction
+
+PCA helps to reduce complexity while retaining most of the data's variability.
