@@ -8,13 +8,13 @@ Term: Spring 25
 This is a repo for final project for class INDE577. It is used to demostrate supervised and unsupervised algorithms which build up the core of machine learning. Some of the algorithms are implemeneted from scratch, and the rest was import from `scikit-learn`. Each folder contains a notebook that implements an algorithm and a README file that simply explains what each algorithm is doing. In each notebook, there are codes for implementation of the algorithms and results analysis. 
 
 ## Supervised Learning
-1. [The Perceptron](./Supervised/The%Perceptron/)
-2. [Linear Regresssion](./Supervised/Linear%Regression/)
-3. [Logistic Regression](./Supervised/Logistic%Regression/)
-4. [Nerual Networks](./Supervised/Neural%Networks/)
-5. [K Nearest Neighbors](./Supervised/K%Nearest%Neighbors/)
-6. [Decision Trees](./Supervised/Decision%Trees/)
-7. [Random Forests](./Supervised/Random%Forests/)
+1. [The Perceptron](./Supervised/The%20Perceptron/)
+2. [Linear Regresssion](./Supervised/Linear%20Regression/)
+3. [Logistic Regression](./Supervised/Logistic%20Regression/)
+4. [Nerual Networks](./Supervised/Neural%20Networks/)
+5. [K Nearest Neighbors](./Supervised/K%20Nearest%20Neighbors/)
+6. [Decision Trees](./Supervised/Decision%20Trees/)
+7. [Random Forests](./Supervised/Random%20Forests/)
 
 ## Unsupervised Learning
 1. K-Means Clustering
