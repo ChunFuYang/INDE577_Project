@@ -10,7 +10,7 @@
 - ucimlrepo
 ## Datasets
 Classification:
-- Wine from UC Irvine Machine Learning Repository
+- Wine from UC Irvine Machine Learning Repository (using load_wine from scikit-learn)
 - Wine Quality from UC Irvine Machine Learning Repository
 
 
