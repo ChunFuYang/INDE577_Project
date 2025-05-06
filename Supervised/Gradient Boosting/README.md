@@ -12,22 +12,22 @@ Gradient Boosting is a supervised ensemble learning method used for both regress
 
 ## Key Formulas
 - **Model Update:**
-  $$
-  F_{m}(x) = F_{m-1}(x) + \gamma_m h_m(x)
-  $$
+$$
+F_{m}(x) = F_{m-1}(x) + \gamma_m h_m(x)
+$$
   where $F_{m}(x)$ is the model at iteration $m$, $h_m(x)$ is the new weak learner, and $\gamma_m$ is the step size (learning rate).
 
 - **Residuals (for regression):**
-  $$
-  r_{im} = y_i - F_{m-1}(x_i)
-  $$
+$$
+r_{im} = y_i - F_{m-1}(x_i)
+$$
   where $y_i$ is the true value and $F_{m-1}(x_i)$ is the prediction from the previous model.
 
 - **General Loss Minimization:**
   At each step, the new learner $h_m(x)$ is fit to minimize the loss function $L$:
-  $$
-  h_m(x) = \arg\min_h \sum_{i=1}^n L\left(y_i, F_{m-1}(x_i) + h(x_i)\right)
-  $$
+$$
+h_m(x) = \arg\min_h \sum_{i=1}^n L\left(y_i, F_{m-1}(x_i) + h(x_i)\right)
+$$
 
 ## Advantages
 - High predictive accuracy

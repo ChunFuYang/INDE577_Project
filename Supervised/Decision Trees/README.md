@@ -9,14 +9,14 @@ Decision Trees are supervised learning algorithms used for classification and re
 
 ## Splitting Criteria
 - **Gini Impurity (for classification):**
-  $$
-  G = 1 - \sum_{i=1}^C p_i^2
-  $$
+$$
+G = 1 - \sum_{i=1}^C p_i^2
+$$
   where $p_i$ is the proportion of class $i$ samples.
 - **Information Gain (Entropy):**
-  $$
-  H = -\sum_{i=1}^C p_i \log_2 p_i
-  $$
+$$
+H = -\sum_{i=1}^C p_i \log_2 p_i
+$$
 
 ## Advantages
 - Easy to interpret
