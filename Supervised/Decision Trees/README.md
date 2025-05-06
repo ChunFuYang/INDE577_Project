@@ -27,3 +27,7 @@ Decision Trees are supervised learning algorithms used for classification and re
 - Unstable to small data variations
 
 Decision Trees are the basis for more advanced ensemble methods like Random Forests.
+
+## References
+- Breiman, L., Friedman, J. H., Olshen, R. A., & Stone, C. J. (1984). Classification and Regression Trees. Wadsworth.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/tree.html

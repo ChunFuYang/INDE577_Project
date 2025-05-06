@@ -28,3 +28,7 @@ The algorithm finds weights that maximize the likelihood of the observed data (m
 - Credit scoring
 
 Logistic Regression is simple, interpretable, and effective for linearly separable data.
+
+## References
+- Hosmer, D. W., Lemeshow, S., & Sturdivant, R. X. (2013). Applied Logistic Regression. Wiley.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression

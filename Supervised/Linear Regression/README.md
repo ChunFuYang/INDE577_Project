@@ -36,3 +36,7 @@ where $\hat{y}_i$ is the predicted value for the $i$-th sample.
 - Estimating trends
 
 Linear Regression assumes a linear relationship, homoscedasticity (constant variance of errors), and independence of errors.
+
+## References
+- Freedman, D. A. (2009). Statistical Models: Theory and Practice. Cambridge University Press.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/linear_model.html#linear-regression

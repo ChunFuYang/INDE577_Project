@@ -21,3 +21,7 @@ Random Forests are ensemble learning algorithms that combine multiple decision t
 - Can be computationally intensive
 
 Random Forests are widely used for their strong performance and versatility.
+
+## References
+- Breiman, L. (2001). Random Forests. Machine Learning, 45(1), 5-32.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/ensemble.html#random-forests

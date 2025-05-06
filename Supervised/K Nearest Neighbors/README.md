@@ -26,3 +26,7 @@ $$
 - Anomaly detection
 
 KNN is easy to implement but can be computationally expensive for large datasets.
+
+## References
+- Cover, T., & Hart, P. (1967). Nearest neighbor pattern classification. IEEE Transactions on Information Theory, 13(1), 21-27.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/neighbors.html

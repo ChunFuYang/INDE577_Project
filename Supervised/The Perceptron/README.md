@@ -35,3 +35,7 @@ $$
 - Pattern recognition
 
 The Perceptron is the building block for more complex neural networks.
+
+## References
+- Rosenblatt, F. (1958). The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain. Psychological Review, 65(6), 386-408.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/linear_model.html#perceptron

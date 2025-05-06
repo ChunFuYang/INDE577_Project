@@ -31,3 +31,7 @@ Neural networks learn by adjusting weights to minimize a loss function (e.g., cr
 - Regression and classification tasks
 
 Neural networks can approximate complex, non-linear functions and are the foundation of deep learning.
+
+## References
+- Goodfellow, I., Bengio, Y., & Courville, A. (2016). Deep Learning. MIT Press.
+- scikit-learn documentation: https://scikit-learn.org/stable/modules/neural_networks_supervised.html
