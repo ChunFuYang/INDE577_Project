@@ -11,8 +11,8 @@ Decision Trees are supervised learning algorithms used for classification and re
 - **Gini Impurity (for classification):** \
 $$
 G = 1 - \sum_{i=1}^C p_i^2
-$$
-  \where $p_i$ is the proportion of class $i$ samples.
+$$ \
+  where $p_i$ is the proportion of class $i$ samples.
 - **Information Gain (Entropy):**
 $$
 H = -\sum_{i=1}^C p_i \log_2 p_i
