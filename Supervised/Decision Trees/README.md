@@ -8,7 +8,7 @@ Decision Trees are supervised learning algorithms used for classification and re
 - **Stopping:** The tree grows until a stopping condition is met (e.g., maximum depth, minimum samples per leaf).
 
 ## Splitting Criteria
-- **Gini Impurity (for classification):**
+- **Gini Impurity (for classification):** \
 $$
 G = 1 - \sum_{i=1}^C p_i^2
 $$
